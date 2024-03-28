@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #F5DEC7;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 28px;
+      /* 調整文本大小 */
+    }
+
+    #edps {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 90px;
+      background-color: #EFCFAE;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border: none;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+    }
+
+    form input[type="button"] {
+      float: right;
+      font-size: 20px;
+      /* 調整按鈕文字大小 */
+      padding: 10px 20px;
+      /* 調整按鈕內邊距，使按鈕更大 */
+    }
+
+    #homeLink {
+      position: absolute;
+      top: 30px;
+      /* 調整向上的距離 */
+      left: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+</head>
+
+<body>
+
+  <div>
+    <div id="edps">
+      <form>
+        <label for="question">請您評估過去七天內自己的情況 (非今天而已)</label><br>
+
+        <label for="q1">Q1: 我能看到事物有趣的一面，並笑得開心</label><br>
+        <input type="radio" name="q1" value="0"> 0 同以前一樣<br>
+        <input type="radio" name="q1" value="1"> 1 沒有以前那麼多<br>
+        <input type="radio" name="q1" value="2"> 2 肯定比以前少<br>
+        <input type="radio" name="q1" value="3"> 3 完全不能<br><br><br>
+
+        <label for="q2">Q2: 我欣然期待未來的一切</label><br>
+        <input type="radio" name="q2" value="0"> 0 同以前一樣<br>
+        <input type="radio" name="q2" value="1"> 1 沒有以前那麼多<br>
+        <input type="radio" name="q2" value="2"> 2 肯定比以前少<br>
+        <input type="radio" name="q2" value="3"> 3 完全不能<br><br><br>
+
+        <label for="q3">Q3: 當事情出錯時，我會不必要地責備自己</label><br>
+        <input type="radio" name="q3" value="0"> 0 沒有這樣<br>
+        <input type="radio" name="q3" value="1"> 1 不經常這樣<br>
+        <input type="radio" name="q3" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q3" value="3"> 3 大部分時候這樣<br><br><br>
+
+        <label for="q4">Q4: 我無緣無故感到焦慮和擔心</label><br>
+        <input type="radio" name="q4" value="0"> 0 一點也沒有<br>
+        <input type="radio" name="q4" value="1"> 1 極少有<br>
+        <input type="radio" name="q4" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q4" value="3"> 3 經常這樣<br><br><br>
+
+        <label for="q5">Q5: 我無緣無故感到害怕和驚慌</label><br>
+        <input type="radio" name="q5" value="0"> 0 一點也沒有<br>
+        <input type="radio" name="q5" value="1"> 1 不經常這樣<br>
+        <input type="radio" name="q5" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q5" value="3"> 3 相當多時候這樣<br><br><br>
+
+        <label for="q6">Q6: 很多事情衝著我而來，使我透不過氣</label><br>
+        <input type="radio" name="q6" value="0"> 0 您一直都能應付得好<br>
+        <input type="radio" name="q6" value="1"> 1 大部分時候您都能像平時那樣應付得好<br>
+        <input type="radio" name="q6" value="2"> 2 有時候您不能像平時那樣應付得好<br>
+        <input type="radio" name="q6" value="3"> 3 大多數時候您都不能應付<br><br><br>
+
+        <label for="q7">Q7: 我很不開心，以致失眠</label><br>
+        <input type="radio" name="q7" value="0"> 0 一點也沒有<br>
+        <input type="radio" name="q7" value="1"> 1 不經常這樣<br>
+        <input type="radio" name="q7" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q7" value="3"> 3 大部分時候這樣<br><br><br>
+
+        <label for="q8">Q8: 我感到難過和悲傷</label><br>
+        <input type="radio" name="q8" value="0"> 0 一點也沒有<br>
+        <input type="radio" name="q8" value="1"> 1 不經常這樣<br>
+        <input type="radio" name="q8" value="2"> 2 相當時候這樣<br>
+        <input type="radio" name="q8" value="3"> 3 大部分時候這樣<br><br><br>
+
+        <label for="q9">Q9: 我不開心到哭</label><br>
+        <input type="radio" name="q9" value="0"> 0 沒有這樣<br>
+        <input type="radio" name="q9" value="1"> 1 只是偶爾這樣<br>
+        <input type="radio" name="q9" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q9" value="3"> 3 大部分時候這樣<br><br><br>
+
+        <label for="q10">Q10: 我想過要傷害自己</label><br>
+        <input type="radio" name="q10" value="0"> 0 沒有這樣<br>
+        <input type="radio" name="q10" value="1"> 1 很少這樣<br>
+        <input type="radio" name="q10" value="2"> 2 有時候這樣<br>
+        <input type="radio" name="q10" value="3"> 3 相當多時候這樣<br><br><br>
+
+        <hr><br>
+        <label>*總分9分以下，絕大多數正常。<br><br>*總分 10-12 分，有可能為憂鬱症，需注意及追蹤並近期內再次評估或找專科醫師處理。<br><br>
+          *總分超過 13 分，代表極可能已受憂鬱症所苦，應找專科醫師處裡。</label>
+        <input type="button" value="上傳資料" onclick="calculateScore()"><br>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let patientId = "6109";
+    function receiveValueFromFlutter(value) {
+      patientId = value;
+    }
+
+    function calculateScore() {
+      const allQuestions = document.querySelectorAll('input[type="radio"]:checked');
+      if (allQuestions.length < 10) {
+        alert("有問題沒有回答！\n請再檢查一遍!");
+        return;
+      }
+
+      let totalScore = 0;
+      const q1Answer = parseInt(document.querySelector('input[name="q1"]:checked').value);
+      const q2Answer = parseInt(document.querySelector('input[name="q2"]:checked').value);
+      const q3Answer = parseInt(document.querySelector('input[name="q3"]:checked').value);
+      const q4Answer = parseInt(document.querySelector('input[name="q4"]:checked').value);
+      const q5Answer = parseInt(document.querySelector('input[name="q5"]:checked').value);
+      const q6Answer = parseInt(document.querySelector('input[name="q6"]:checked').value);
+      const q7Answer = parseInt(document.querySelector('input[name="q7"]:checked').value);
+      const q8Answer = parseInt(document.querySelector('input[name="q8"]:checked').value);
+      const q9Answer = parseInt(document.querySelector('input[name="q9"]:checked').value);
+      const q10Answer = parseInt(document.querySelector('input[name="q10"]:checked').value);
+
+      totalScore = q1Answer + q2Answer + q3Answer + q4Answer + q5Answer + q6Answer + q7Answer + q8Answer + q9Answer + q10Answer;
+
+      const questionnaireResponse = {
+        resourceType: "QuestionnaireResponse",
+        subject: {
+          reference: "Patient/" + patientId
+        },
+        item: [
+          {
+            linkId: "q1",
+            text: "我能看到事物有趣的一面，並笑得開心",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q1"]:checked').value),
+                valueString: document.querySelector('input[name="q1"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q2",
+            text: "我欣然期待未來的一切",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q2"]:checked').value),
+                valueString: document.querySelector('input[name="q2"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q3",
+            text: "當事情出錯時，我會不必要地責備自己",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q3"]:checked').value),
+                valueString: document.querySelector('input[name="q3"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q4",
+            text: "我無緣無故感到焦慮和擔心",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q4"]:checked').value),
+                valueString: document.querySelector('input[name="q4"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q5",
+            text: "我無緣無故感到害怕和驚慌",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q5"]:checked').value),
+                valueString: document.querySelector('input[name="q5"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q6",
+            text: "很多事情衝著我而來，使我透不過氣",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q6"]:checked').value),
+                valueString: document.querySelector('input[name="q6"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q7",
+            text: "我很不開心，以致失眠",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q7"]:checked').value),
+                valueString: document.querySelector('input[name="q7"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q8",
+            text: "我感到難過和悲傷",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q8"]:checked').value),
+                valueString: document.querySelector('input[name="q8"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q9",
+            text: "我不開心到哭",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q9"]:checked').value),
+                valueString: document.querySelector('input[name="q9"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          },
+          {
+            linkId: "q10",
+            text: "我想過要傷害自己",
+            answer: [
+              {
+                valueInteger: parseInt(document.querySelector('input[name="q10"]:checked').value),
+                valueString: document.querySelector('input[name="q10"]:checked').nextSibling.textContent.trim()
+              }
+            ]
+          }
+        ]
+      };
+      //https://hapi.fhir.org/baseR4
+      fetch("https://fhir.tcumi.com:58443/r5/fhir/QuestionnaireResponse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/fhir+json"
+        },
+        body: JSON.stringify(questionnaireResponse)
+      })
+        .then(response => {
+          if (response.status === 201) {
+            if (totalScore < 9) {
+              alert("送出成功!\nTotal Score:" + totalScore + "\n心理狀況還不錯喔!");
+            } else if (totalScore > 9 && totalScore < 13) {
+              alert("送出成功!\nTotal Score:" + totalScore + "\n需注意及追蹤並近期內再次評估喔!");
+            } else if (totalScore > 13) {
+              alert("送出成功!\nTotal Score:" + totalScore + "\n可能已受憂鬱症所苦，應找專科醫師處裡!");
+            }
+            return Promise.resolve();
+          } else {
+            alert("送出失敗" + response.status);
+            throw new Error("Failed to send questionnaire. Status: " + response.status);
+          }
+        })
+        .catch(error => {
+          console.error("Error saving QuestionnaireResponse:", error);
+          alert("Error saving QuestionnaireResponse: " + error);
+        });
+    }
+
+    
+
+  </script>
+</body>
+
+</html>
